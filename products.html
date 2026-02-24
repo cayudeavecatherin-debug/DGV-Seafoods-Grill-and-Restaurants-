@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DGV Seafoods Grill and Restaurant in Dalaguete Cebu</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: url('12.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #222;
+    }
+
+    header {
+        text-align: center;
+        padding: 30px 20px;
+        background: rgba(255,255,255,0.85);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+        font-family: 'Playfair Display', serif;
+        color: #014F86;
+        font-size: 38px;
+        margin: 0;
+    }
+
+    header h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #FF7F50;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    nav {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #FF7F50;
+        font-weight: 600;
+        margin: 0 15px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #014F86;
+    }
+
+    .menu-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .menu-item {
+        background: rgba(255,255,255,0.9);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s forwards;
+    }
+
+    .menu-item:nth-child(1) { animation-delay: 0.1s; }
+    .menu-item:nth-child(2) { animation-delay: 0.3s; }
+    .menu-item:nth-child(3) { animation-delay: 0.5s; }
+    .menu-item:nth-child(4) { animation-delay: 0.7s; }
+
+    @keyframes fadeInUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .menu-item:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+    .menu-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-content h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        color: #014F86;
+        margin: 10px 0;
+    }
+
+    .menu-content p {
+        font-size: 15px;
+        color: #444;
+        line-height: 1.5;
+    }
+
+    @media(max-width: 600px){
+        header h1 { font-size: 28px; }
+        header h2 { font-size: 18px; }
+        .menu-content h3 { font-size: 20px; }
+        .menu-content p { font-size: 14px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>DGV SEAFOODS GRILL AND RESTAURANT</h1>
+    <h2>CATCH. GRILL. ENJOY.</h2>
+</header>
+
+<nav>
+    <a href=index.html>HOME</a>
+    <a href=events.html>EVENTS</a>
+    <a href=contacts.html>CONTACT US</a>
+    <a href=products.html>PRODUCTS</a>
+</nav>
+
+<div class="menu-container">
+    <div class="menu-item">
+        <img src="monggo.jpg" alt="Monggo with Seafood">
+        <div class="menu-content">
+            <h3>Monggo with Seafood</h3>
+            <p>A healthy dish made of mung beans and seafood. Light, tasty, and filling. High in protein, fiber, and vitamins like D, calcium, and iron.</p>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="adobo.jpg" alt="Squid Adobo">
+        <div class="menu-content">
+            <h3>Squid Adobo with Ata</h3>
+            <p>Filipino dish where squid is cooked in soy sauce, vinegar, garlic, and ink. Rich, savory, and high in protein and minerals like iron and phosphorus.</p>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="inasal.jpg" alt="Chicken Inasal">
+        <div class="menu-content">
+            <h3>Chicken Inasal</h3>
+            <p>Grilled chicken marinated in vinegar, calamansi, garlic, and spices. Smoky, juicy, and flavorful. High in protein and vitamins for energy and strong muscles.</p>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="baked.jpg" alt="Baked Scallop">
+        <div class="menu-content">
+            <h3>Baked Scallop</h3>
+            <p>Fresh scallops baked with butter, garlic, cheese, and seasonings. Creamy, soft, and flavorful. High in protein, vitamin B12, magnesium, and zinc.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

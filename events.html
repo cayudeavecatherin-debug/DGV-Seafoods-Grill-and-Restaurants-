@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DGV Seafoods Grill and Restaurant in Dalaguete Cebu</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="DGV Seafoods Grill offers fresh,savory, delicious, affordable, flavorful, grilled, local, satisfying, cozy, and friendly dining experiences. >
+        <meta name="keywords" content="Fresh seafood with a quality dining products services">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: url("12.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #014F86;
+        text-align: center;
+    }
+
+    .nav-bar {
+        background: rgba(0,0,0,0.7);
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav-bar a {
+        color: #FFD700;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .nav-bar a:hover {
+        color: #FF7F50;
+        transition: 0.3s;
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        color: blue;
+        margin-top: 25px;
+        font-size: 42px;
+        text-shadow: 2px 2px 8px rgba(255,255,255,0.5);
+    }
+
+    h2 {
+        color: YELLOW;
+        text-shadow: 1px 1px 5px rgba(255,255,255,0.4);
+    }
+
+    .promo-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .promo-card {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 15px;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        padding-bottom: 20px;
+    }
+
+    .promo-card:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+    }
+
+    .promo-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #FF4500;
+        color: white;
+        font-size: 16px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .promo-info {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .promo-info h3 {
+        margin: 0;
+        font-size: 24px;
+        color: #FFD700;
+        font-family: "Playfair Display", serif;
+    }
+
+    .promo-info p {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: black;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 30px; }
+        h2 { font-size: 18px; }
+        .nav-bar a { font-size: 16px; margin: 0 10px; }
+        .promo-info h3 { font-size: 20px; }
+        .promo-info p { font-size: 14px; }
+    }
+</style>
+
+</head>
+
+<body>
+
+<h1>WELCOME TO DGV Seafoods Grill Restaurant 🐟</h1>
+
+<div class="nav-bar">
+    <a href=index.html>HOME</a>||
+    <a href=events.html>EVENTS</a>||
+    <a href=contacts.html>CONTACT US</a>||
+    <a href=products.html>PRODUCTS</a>||
+</div>
+<div class="nav-bar">
+    ...
+</div>
+
+<h2 style="margin-top: 20px; color: #FFD700;">🐟 The seafood here is very fresh.</h2>
+<h2 style="color: #FFD700;">🍤 The ingredients are organic.</h2>
+<div class="promo-container">
+
+    <div class="promo-card" onclick="togglePromo(0)">
+        <span class="promo-badge">NEW!</span>
+        <div class="promo-info">
+            <h3>Fresh Steamed Talaba 🦪</h3>
+            <p>Now newly added to the menu! Enjoy fresh, steamed talaba served with native vinegar and chili for that perfect seafood kick.</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    function togglePromo(i) {
+        document.querySelectorAll('.promo-card')[i].classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
+<div class="promo-card" onclick="togglePromo(0)">
+    <span class="promo-badge">NEW!</span>
+    <!-- Image as part of the title -->
+    <div class="promo-header">
+        <img src="talaba.jpg" alt="Fresh Steamed Talaba" class="promo-title-img" />
+        <h3>Fresh Steamed Talaba 🦪</h3>
+    </div>
+    <div class="promo-info">
+        <p>Now newly added to the menu! Enjoy fresh, steamed talaba served with native vinegar and chili for that perfect seafood kick.</p>
+    </div>
+</div>
+
+
+
+
+
+y
